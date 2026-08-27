@@ -28,8 +28,8 @@ def send_wishes(name, receiver_email):
     #     wishes.write(data)
 
     # --- your credentials ---
-    sender_email = "lipny_email_test123@wp.pl"
-    sender_password = "8RH!-aAMWzQ.s!44KA_RViepga"   # regular WP.pl login password
+    sender_email = os.environ.get("sender_email")
+    sender_password = os.environ.get("sender_password")
     receiver_email = receiver_email
 
     # --- build the message ---
