@@ -28,8 +28,8 @@ def send_wishes(name, receiver_email):
     #     wishes.write(data)
 
     # --- your credentials ---
-    sender_email = os.environ.get("sender_email")
-    sender_password = os.environ.get("sender_password")
+    sender_email = os.environ.get("SENDER_EMAIL")
+    sender_password = os.environ.get("SENDER_PASSWORD")
     receiver_email = receiver_email
 
     # --- build the message ---
